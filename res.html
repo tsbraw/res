@@ -32,6 +32,8 @@
         <del>定义删除字</del>
         <p style="color: chartreuse;">内部样式方法</p>
         <img src="images/48b9432af2910c7c.jpg" width="108px" height="108px" alt="lover">
+
+
         <table>
             <col style="background-color:beige;" span="1">
 
@@ -97,7 +99,6 @@
                 </tr>
             </tfoot>
         </table>
-
 
 
         <h1>太阳系行星数据</h1>
@@ -258,6 +259,42 @@
                 </tr>                
             </tbody>
         </table>
+
+
+        <form action="/url" method="POST">      <!-- action把所收集的数据送给谁(URL)去处理;method发送数据的HTTP方法    -->
+            <fieldset>
+                <legend>Fruit juice size</legend>
+                <p>                             <!--input必须使用value属性-->
+                    <input type="radio" name="size" id="size_1" value="small">
+                    <label for="size_1">Small</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_2" value="medium">
+                    <label for="size_2">Medium</label>
+                </p>
+                <p>
+                    <input type="radio" name="size" id="size_3" value="large">
+                    <label for="size_3">Large</label>
+                </p>
+            </fieldset>
+        </form>
+
+
+        <form action="/form" method="POST">
+            <p>
+                <textarea name="uesr_message" id="msg" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                Add a comment here:<input type="text" id="comment" name="comment" value="I'm a text field">
+            </p>
+            <p>
+                Enter your email address:<input type="email" id="email" name="email" multiple>
+            </p>
+            
+            <div class="buttle">
+                <button type="submit">Send your message</button>
+            </div>        
+        </form>
 
 
 
